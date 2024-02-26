@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para entregar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-content">
+
+        <form action="send.php" method="post">
+            <h1>Datos persoais</h1>
+            <ul class="fields">
+                <li class="field">
+                    <label>
+                        Nome <input type="text" placeholder="Nome" name="nombre">
+                    </label>
+                </li>
+                <li class="field">
+                    <label>
+                        Apelidos <input type="text" placeholder="Apelidos" name="apelidos">
+                    </label>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <label><input type="radio" name="sexo" value="muller">M</label>
+                        <label><input type="radio" name="sexo" value="home">H</label>
+                    </fieldset>
+                </li>
+                <li class="field">
+                    <label>
+                        Correo electrónico <input type="email" placeholder="info@info.com" name="correo">
+                    </label>
+                </li>
+                <li class="field">
+                    <label>
+                        Teléfono <input type="tel" name="telefono" placeholder="1234567" name="telefono">
+                    </label>
+                </li>
+            </ul>
+            <button>Enviar os datos</button>
+        </form>
+    </main>
+</body>
+
+</html>
